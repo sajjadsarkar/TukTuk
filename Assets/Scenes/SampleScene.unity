@@ -180,6 +180,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5479125267455724031, guid: 2fa68527f69f495419b9acf8026c5ed5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479125267455724031, guid: 2fa68527f69f495419b9acf8026c5ed5, type: 3}
       propertyPath: CarController
       value: 
       objectReference: {fileID: 748549410}
@@ -190,10 +194,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1861640625196585085, guid: 2fa68527f69f495419b9acf8026c5ed5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 423848296}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fa68527f69f495419b9acf8026c5ed5, type: 3}
 --- !u!1 &82557036 stripped
 GameObject:
@@ -329,7 +330,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 512758746435804006, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 512758746435804006, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -338,14 +339,14 @@ PrefabInstance:
     - target: {fileID: 512758746435804006, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 423848296}
+      objectReference: {fileID: 0}
     - target: {fileID: 512758746435804006, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 512758746435804006, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Right
+      value: RightButtonDown
       objectReference: {fileID: 0}
     - target: {fileID: 512758746435804006, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -358,6 +359,10 @@ PrefabInstance:
     - target: {fileID: 1687842086158449286, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768841475994152697, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
+      propertyPath: isPressed
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1768841475994152697, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
       propertyPath: carController
@@ -465,7 +470,7 @@ PrefabInstance:
       objectReference: {fileID: 748549410}
     - target: {fileID: 5251521980928186959, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5251521980928186959, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -474,14 +479,14 @@ PrefabInstance:
     - target: {fileID: 5251521980928186959, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 423848296}
+      objectReference: {fileID: 0}
     - target: {fileID: 5251521980928186959, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5251521980928186959, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Left
+      value: LeftButtonDown
       objectReference: {fileID: 0}
     - target: {fileID: 5251521980928186959, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -491,6 +496,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5851640919861629155, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
+      propertyPath: m_Name
+      value: LeftButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851640919861629155, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
+      propertyPath: m_TagString
+      value: LeftButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280326179924842791, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
+      propertyPath: m_Name
+      value: RightButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280326179924842791, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
+      propertyPath: m_TagString
+      value: RightButton
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2422886710505863791, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
@@ -499,24 +520,32 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4663135528623943458, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
       insertIndex: -1
       addedObject: {fileID: 82557043}
+    - targetCorrespondingSourceObject: {fileID: 5851640919861629155, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 541807336}
+    - targetCorrespondingSourceObject: {fileID: 7280326179924842791, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1655262632}
   m_SourcePrefab: {fileID: 100100000, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
---- !u!1 &423848293 stripped
+--- !u!1 &541807331 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1861640625196585085, guid: 2fa68527f69f495419b9acf8026c5ed5, type: 3}
-  m_PrefabInstance: {fileID: 1349785}
+  m_CorrespondingSourceObject: {fileID: 5851640919861629155, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
+  m_PrefabInstance: {fileID: 368379437}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &423848296
+--- !u!114 &541807336
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 423848293}
+  m_GameObject: {fileID: 541807331}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f772cd85468ca34a8c2c78f34a3e9ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxTurnRate: 1
+  releaseSpeed: 0.5
   input: 0
 --- !u!1 &705507993
 GameObject:
@@ -632,13 +661,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1821950947862416795, guid: 6f4498866be35874f90d24243377bafe, type: 3}
+      propertyPath: maxSpeed
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821950947862416795, guid: 6f4498866be35874f90d24243377bafe, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1821950947862416795, guid: 6f4498866be35874f90d24243377bafe, type: 3}
       propertyPath: wheelController
       value: 
-      objectReference: {fileID: 423848296}
+      objectReference: {fileID: 541807336}
+    - target: {fileID: 1821950947862416795, guid: 6f4498866be35874f90d24243377bafe, type: 3}
+      propertyPath: wheelController2
+      value: 
+      objectReference: {fileID: 1655262632}
+    - target: {fileID: 1821950947862416795, guid: 6f4498866be35874f90d24243377bafe, type: 3}
+      propertyPath: secondWheelController
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2679293507354929448, guid: 6f4498866be35874f90d24243377bafe, type: 3}
       propertyPath: m_Name
       value: TukTuk New
@@ -863,3 +904,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 380701fda23a35d409715da2f9761362, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1655262627 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7280326179924842791, guid: 6d8c315870f7b6d448a76a382ba97885, type: 3}
+  m_PrefabInstance: {fileID: 368379437}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1655262632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655262627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6251784728bda9f4abda6b96979efcb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxTurnRate: 1
+  releaseSpeed: 0.5
+  input: 0

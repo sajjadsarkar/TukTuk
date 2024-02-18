@@ -18,7 +18,8 @@ public class CarController : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
 
-    public LeftRight wheelController;
+    public Left wheelController;
+    public Right wheelController2;
     private bool isMoving = false;
 
     public float steeringRatio = 2.0f;
@@ -44,21 +45,26 @@ public class CarController : MonoBehaviour
         float turnAngle = wheelController.input * steeringRatio;
         turnAngle = Mathf.Clamp(turnAngle, -45, 45);
 
+        float secondTurnAngle = wheelController2.input * steeringRatio;
+        secondTurnAngle = Mathf.Clamp(secondTurnAngle, -45, 45);
+
+        // Apply the calculated steering angle to the front wheels for the second wheel controller
         // Apply the calculated steering angle to the front wheels
         foreach (var wheel in frontWheels)
         {
-            wheel.steerAngle = turnAngle;
+            wheel.steerAngle = turnAngle + secondTurnAngle;
         }
 
-       /* float forwardTorque = verticalInput * speed;
 
-        // Apply speed limit
-        forwardTorque = Mathf.Clamp(forwardTorque, -maxSpeed, maxSpeed);
+        /* float forwardTorque = verticalInput * speed;
 
-        foreach (var wheel in rearWheels)
-        {
-            wheel.motorTorque = forwardTorque;
-        }*/
+         // Apply speed limit
+         forwardTorque = Mathf.Clamp(forwardTorque, -maxSpeed, maxSpeed);
+
+         foreach (var wheel in rearWheels)
+         {
+             wheel.motorTorque = forwardTorque;
+         }*/
     }
     public void MoveForward()
     {
