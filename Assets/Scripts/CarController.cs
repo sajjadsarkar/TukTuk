@@ -18,7 +18,7 @@ public class CarController : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
 
-    public WheelController wheelController;
+    public LeftRight wheelController;
     private bool isMoving = false;
 
     public float steeringRatio = 2.0f;
