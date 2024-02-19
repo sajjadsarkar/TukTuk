@@ -9,7 +9,7 @@ public class ButtonController : MonoBehaviour, IPointerDownHandler, IPointerUpHa
     public CarController carController;
     public bool isForward = true;
     public float decelerationRate = 0.2f;
-    public bool isPressed;
+    public bool isPressed = true;
     public float accelerationRate = 0.1f; // Rate at which the car accelerates (increase this value for faster acceleration)
 
     private void Update()
