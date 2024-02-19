@@ -24,7 +24,7 @@ public class CarController : MonoBehaviour
 
     public float steeringRatio = 2.0f;
     public float breakforce = 2f;
-
+    public float accelerationRate = 5.0f;
     private void Update()
     {
         // Get input from the player
@@ -34,12 +34,10 @@ public class CarController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float scaledSpeed = (Currentspeed - 500.0f) * 0.1f; // Adjust the scaling factor as needed
-
-        // Update the UI Text with the scaled speed
-        if (speedText != null)
+        if (Currentspeed < maxSpeed)
         {
-            speedText.text = scaledSpeed.ToString("F1") + " KM/H"; // Display one decimal place
+            Currentspeed += accelerationRate * Time.deltaTime;
+            Currentspeed = Mathf.Clamp(Currentspeed, 0f, maxSpeed);
         }
         // Calculate the steering angle
         float turnAngle = wheelController.input * steeringRatio;

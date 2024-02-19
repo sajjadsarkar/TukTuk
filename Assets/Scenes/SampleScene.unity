@@ -757,11 +757,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1821950947862416795, guid: 6f4498866be35874f90d24243377bafe, type: 3}
       propertyPath: maxSpeed
-      value: 500
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 1821950947862416795, guid: 6f4498866be35874f90d24243377bafe, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821950947862416795, guid: 6f4498866be35874f90d24243377bafe, type: 3}
+      propertyPath: Currentspeed
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 1821950947862416795, guid: 6f4498866be35874f90d24243377bafe, type: 3}
       propertyPath: steeringRatio
