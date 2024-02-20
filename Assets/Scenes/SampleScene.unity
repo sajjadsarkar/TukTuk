@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -323,7 +323,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &116564326
 Transform:
   m_ObjectHideFlags: 0
@@ -395,7 +395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &131036641
 Transform:
   m_ObjectHideFlags: 0
@@ -1393,14 +1393,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   sideMovementSpeed: 10
-  steeringWheelRotationSpeed: 100
+  maxSteerAngle: 30
   frontWheelCollider: {fileID: 688274186}
   rearLeftWheelCollider: {fileID: 1217855763}
   rearRightWheelCollider: {fileID: 24803016}
   frontWheelTransform: {fileID: 222745288}
   rearLeftWheelTransform: {fileID: 2099895291}
   rearRightWheelTransform: {fileID: 800539789}
-  steeringWheelTransform: {fileID: 222745288}
 --- !u!1001 &792580295
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1694,7 +1693,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &963194226
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1869,7 +1868,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1113621430
 Transform:
   m_ObjectHideFlags: 0
@@ -2078,7 +2077,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1279588018
 Transform:
   m_ObjectHideFlags: 0
@@ -2199,7 +2198,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1329476619
 Transform:
   m_ObjectHideFlags: 0
