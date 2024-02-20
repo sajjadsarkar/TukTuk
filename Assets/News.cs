@@ -42,11 +42,9 @@ public class News : MonoBehaviour
     {
         if (isGrounded)
         {
-            Vector3 moveDirection = transform.forward * speed * horizontalInput;
-            rb.velocity = moveDirection;
+            rb.AddRelativeForce(Vector3.forward * speed * horizontalInput, ForceMode.Acceleration);
         }
     }
-
 
     private void RotateSteeringWheel(float direction)
     {
