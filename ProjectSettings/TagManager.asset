@@ -6,6 +6,7 @@ TagManager:
   tags:
   - LeftButton
   - RightButton
+  - SpawnTrigger
   layers:
   - Default
   - TransparentFX
