@@ -1391,8 +1391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6448e9b2fad25cc45a01400264d7a3b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  sideMovementSpeed: 10
+  speed: 1
+  sideMovementSpeed: 5
   maxSteerAngle: 30
   frontWheelCollider: {fileID: 688274186}
   rearLeftWheelCollider: {fileID: 1217855763}

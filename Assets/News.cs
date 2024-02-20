@@ -58,6 +58,9 @@ public class News : MonoBehaviour
 
         // Update front wheel rotation based on steering angle
         UpdateFrontWheelRotation();
+
+        // Prevent the tuktuk from falling
+        PreventFalling();
     }
 
 
@@ -86,5 +89,12 @@ public class News : MonoBehaviour
         float steerAngle = maxSteerAngle * (isMovingRight ? 1f : isMovingLeft ? -1f : 0f);
         frontWheelCollider.steerAngle = steerAngle;
         frontWheelTransform.localRotation = Quaternion.Euler(0f, steerAngle, 0f);
+    }
+
+    // Prevent the tuktuk from falling
+    void PreventFalling()
+    {
+        // Reset rotation on X and Z axes
+        transform.rotation = Quaternion.Euler(0f, transform.rotation.eulerAngles.y, 0f);
     }
 }
