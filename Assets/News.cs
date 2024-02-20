@@ -4,6 +4,7 @@ public class News : MonoBehaviour
 {
     public float speed = 5f; // Speed of the tuktuk
     public float sideMovementSpeed = 10f; // Speed of side movement
+    public float steeringWheelRotationSpeed = 100f; // Speed of steering wheel rotation
 
     public WheelCollider frontWheelCollider;
     public WheelCollider rearLeftWheelCollider;
@@ -12,6 +13,7 @@ public class News : MonoBehaviour
     public Transform frontWheelTransform;
     public Transform rearLeftWheelTransform;
     public Transform rearRightWheelTransform;
+    public Transform steeringWheelTransform; // Add a reference to the steering wheel's transform
 
     private bool isMovingLeft = false;
     private bool isMovingRight = false;
@@ -45,10 +47,16 @@ public class News : MonoBehaviour
         if (isMovingLeft)
         {
             MoveTuktuk(-1);
+            RotateSteeringWheel(1);
         }
         else if (isMovingRight)
         {
             MoveTuktuk(1);
+            RotateSteeringWheel(-1);
+        }
+        else
+        {
+            RotateSteeringWheel(0);
         }
 
         // Update wheel rotation
@@ -63,6 +71,12 @@ public class News : MonoBehaviour
         Vector3 targetPosition = transform.position + Vector3.right * direction;
 
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, sideMovementSpeed * Time.deltaTime);
+    }
+
+    // Rotate the steering wheel based on direction (-1 for left, 1 for right)
+    void RotateSteeringWheel(int direction)
+    {
+        steeringWheelTransform.Rotate(Vector3.up * direction * steeringWheelRotationSpeed * Time.deltaTime);
     }
 
     // Update the visual rotation of the wheel based on WheelCollider's rotation
