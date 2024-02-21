@@ -28514,7 +28514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e027cf5d099f8a41ab78532b4e84490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pressing: 0
+  pressing: 1
 --- !u!1 &1465059360
 GameObject:
   m_ObjectHideFlags: 0
@@ -63946,15 +63946,15 @@ MonoBehaviour:
   brakeTorque: 2500
   steerAngle: 40
   highspeedsteerAngle: 3
-  highspeedsteerAngleAtspeed: 150
-  antiRollFrontHorizontal: 10000
-  antiRollRearHorizontal: 10000
+  highspeedsteerAngleAtspeed: 70
+  antiRollFrontHorizontal: 5000
+  antiRollRearHorizontal: 5000
   antiRollVertical: 0
   downForce: 50
   useCounterSteering: 1
   counterSteeringFactor: 0.5
   speed: 0
-  maxspeed: 500
+  maxspeed: 50
   engineTorqueCurve:
     serializedVersion: 2
     m_Curve:
