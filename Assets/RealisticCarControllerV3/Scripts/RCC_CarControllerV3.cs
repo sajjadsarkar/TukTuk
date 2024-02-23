@@ -918,42 +918,41 @@ public class RCC_CarControllerV3 : RCC_Core {
 	/// <summary>
 	/// Other visuals.
 	/// </summary>
-	private void OtherVisuals(){
+	private void OtherVisuals()
+	{
 
 		//Driver SteeringWheel Transform.
-		if (SteeringWheel) {
+		if (SteeringWheel)
+		{
 
 			if (orgSteeringWheelRot.eulerAngles == Vector3.zero)
 				orgSteeringWheelRot = SteeringWheel.transform.localRotation;
-			
-			switch (steeringWheelRotateAround) {
 
-			case SteeringWheelRotateAround.XAxis:
-				SteeringWheel.transform.localRotation = orgSteeringWheelRot * Quaternion.AngleAxis(((steerInput * steerAngle) * -steeringWheelAngleMultiplier), Vector3.right);
-				break;
+			switch (steeringWheelRotateAround)
+			{
 
-			case SteeringWheelRotateAround.YAxis:
-				SteeringWheel.transform.localRotation = orgSteeringWheelRot * Quaternion.AngleAxis(((steerInput * steerAngle) * -steeringWheelAngleMultiplier), Vector3.up);
-				break;
+				case SteeringWheelRotateAround.XAxis:
+					SteeringWheel.transform.localRotation = orgSteeringWheelRot * Quaternion.AngleAxis(((steerInput * steerAngle) * -steeringWheelAngleMultiplier), Vector3.right);
+					break;
 
-			case SteeringWheelRotateAround.ZAxis:
-				SteeringWheel.transform.localRotation = orgSteeringWheelRot * Quaternion.AngleAxis(((steerInput * steerAngle) * -steeringWheelAngleMultiplier), Vector3.forward);
-				break;
+				case SteeringWheelRotateAround.YAxis:
+					SteeringWheel.transform.localRotation = orgSteeringWheelRot * Quaternion.AngleAxis(((steerInput * steerAngle) * -steeringWheelAngleMultiplier), Vector3.up);
+					break;
+
+				case SteeringWheelRotateAround.ZAxis:
+					SteeringWheel.transform.localRotation = orgSteeringWheelRot * Quaternion.AngleAxis(((steerInput * steerAngle) * -steeringWheelAngleMultiplier), Vector3.forward);
+					break;
 
 			}
 
 		}
 
 	}
-	
-	void Update (){
+    void Update (){
 
 		Inputs();
-
-		//Reversing Bool.
-		//if (!externalController){
-
-		if(brakeInput > .9f  && transform.InverseTransformDirection(rigid.velocity).z < 1f && canGoReverseNow && automaticGear && !semiAutomaticGear && !changingGear && direction != -1)
+        
+        if (brakeInput > .9f  && transform.InverseTransformDirection(rigid.velocity).z < 1f && canGoReverseNow && automaticGear && !semiAutomaticGear && !changingGear && direction != -1)
 			StartCoroutine(ChangeGear(-1));
 		else if (throttleInput < .1f && transform.InverseTransformDirection(rigid.velocity).z > -1f && direction == -1 && !changingGear && automaticGear && !semiAutomaticGear)
 			StartCoroutine(ChangeGear(0));
