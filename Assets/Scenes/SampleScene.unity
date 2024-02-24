@@ -602,8 +602,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  minXLimit: -7
-  maxXLimit: 7
 --- !u!65 &23985808
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -683,7 +681,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23985806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.41, y: 0.65, z: 72.1}
+  m_LocalPosition: {x: -4, y: 0.65, z: 72.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1904,8 +1902,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  minXLimit: -7
-  maxXLimit: 7
 --- !u!65 &102798913
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25468,8 +25464,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  minXLimit: -7
-  maxXLimit: 7
 --- !u!65 &1218514473
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25549,7 +25543,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218514471}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.41, y: 0.65, z: 72.1}
+  m_LocalPosition: {x: -3.6, y: 0.65, z: 116.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30652,8 +30646,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  minXLimit: -7
-  maxXLimit: 7
 --- !u!65 &1464604862
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30733,7 +30725,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464604860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.41, y: 0.65, z: 72.1}
+  m_LocalPosition: {x: 4.2, y: 0.65, z: 150.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31738,8 +31730,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  minXLimit: -7
-  maxXLimit: 7
 --- !u!65 &1571859132
 BoxCollider:
   m_ObjectHideFlags: 0
